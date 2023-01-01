@@ -102,8 +102,10 @@ if(fase==1)
     M5.Lcd.setTextColor(TFT_RED,BLACK); 
     M5.Lcd.drawString("Correct Answer is: "+String(res)+"    ",20,40,4);
     M5.Axp.SetLDOEnable(3, true);  //Open the vibration. 
+    M5.Spk.DingDong();  // Play the DingDong sound.
     delay(500);
     M5.Axp.SetLDOEnable(3, false);  //Open the vibration.  
+    M5.Spk.DingDong();  // Play the DingDong sound.
     delay(2000);
     for(int i=0;i<4;i++)
     answer[i]=0;
