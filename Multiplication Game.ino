@@ -88,7 +88,7 @@ if(fase==1)
     correct++;
     M5.Lcd.pushImage(240,80,48,48,corr);
     M5.Lcd.setTextColor(TFT_GREEN,BLACK); 
-    M5.Lcd.drawString("Correct Answer is: "+String(res)+"    ",20,40,4);
+    //M5.Lcd.drawString("Correct Answer is: "+String(res)+"    ",20,40,4);
     M5.Spk.DingDong();  // Play the DingDong sound.
     delay(2500);
     for(int i=0;i<4;i++)
