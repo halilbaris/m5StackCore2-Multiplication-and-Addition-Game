@@ -35,6 +35,14 @@ void loop(void)
 
   if(fase==0)
   {
+      
+    if (M5.BtnA.wasPressed() || M5.BtnB.wasPressed() || M5.BtnC.wasPressed()) {
+    M5.Spk.DingDong();  // Play the DingDong sound. 
+    delay(50);
+    M5.Spk.DingDong();  // Play the DingDong sound. 
+    delay(100);
+    M5.shutdown();
+    } 
     int operation = random(3); 
     if (operation == 0) {   ///// addition
       firstN=random(0,99);
