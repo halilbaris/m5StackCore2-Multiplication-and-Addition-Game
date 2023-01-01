@@ -63,6 +63,7 @@ if(fase==0)
     M5.Lcd.setTextColor(LIGHTGREY ,TFT_BLACK);
     M5.Lcd.setFreeFont(&Dialog_plain_52);
     M5.Lcd.drawString(String(firstN)+" x "+String(secondN)+"      ",70,80);///// ana sorunun isareti " esittir isaretini sildim"
+    //M5.Lcd.drawString(String(firstN)+" + "+String(secondN)+"      ",70,80);///// ana sorunun isareti " esittir isaretini sildim"
    
     M5.Lcd.setTextColor( ORANGE,TFT_BLACK);
     M5.Lcd.drawString("True: "+String(correct)+"    ",4,5,4);
