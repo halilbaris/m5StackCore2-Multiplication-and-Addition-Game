@@ -60,7 +60,8 @@ if(fase==0)
     answer[pos]=res;
     for(int i=0;i<4;i++){
     if(answer[i]==0)
-    answer[i]=random(1,9999);
+    //answer[i]=random(1,9999); //random numbers limit for multiplaction answers 
+    answer[i]=random(1,200); // random numbers limit for addition answers 
     M5.Lcd.fillRoundRect((space+(i*78)+(i*space)),160,78,78,5,0x0187);
     M5.Lcd.drawRoundRect((space+(i*78)+(i*space)),160,78,78,5,LIGHTGREY);
     M5.Lcd.setTextColor(TFT_ORANGE,0x0187);
