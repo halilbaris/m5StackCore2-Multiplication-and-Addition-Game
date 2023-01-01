@@ -45,8 +45,8 @@ if(fase==0)
 
     firstN=random(0,99);
     secondN=random(0,99);
-    res=firstN+secondN; /////// toplama
-    //res=firstN*secondN; /////// carpma
+    res=firstN+secondN; /////// addition
+    //res=firstN*secondN; /////// multiplaction
     pos=random(3);
     M5.Lcd.fillScreen(TFT_BLACK);
     M5.Lcd.setTextColor(LIGHTGREY ,TFT_BLACK);
