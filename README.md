@@ -2,4 +2,4 @@
 M5Stack Core2 Touch Screen Multiplication and Addition Game for kids
 
 Long press the ButtonA, ButtonB and ButtonC to deep sleep game. 
-1. Vibration and DingDong sound added for wrong asnwers.
+Vibration and DingDong sound added for wrong asnwers.
