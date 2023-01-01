@@ -49,13 +49,14 @@ if(fase==0)
     //res=firstN*secondN; /////// carpma
   
     ////// Substruction Rule ////////////always first number should be bigger than second number
-    while(secondN > firstN ){
+    while(secondN >= firstN ){
           firstN=random(0,99);
           secondN=random(0,99);
     } 
     //////////////////////////////
   
     res=firstN-secondN;  ////Substruction
+    
     pos=random(3);
     M5.Lcd.fillScreen(TFT_BLACK);
     M5.Lcd.setTextColor(LIGHTGREY ,TFT_BLACK);
@@ -77,7 +78,7 @@ if(fase==0)
     M5.Lcd.setTextColor(TFT_ORANGE,0x0187);
     //M5.Lcd.drawString(String(answer[i]),(10+space+(i*78)+(i*space)),185,4); // carpma 
     // M5.Lcd.drawString(String(answer[i]),(8+space+(i*78)+(i*space)),185,4); // toplama 
-    M5.Lcd.drawString(String(answer[i]),(25+space+(i*78)+(i*space)),185,4); // Substruction 
+    M5.Lcd.drawString(String(answer[i]),(8+space+(i*78)+(i*space)),185,6); // Substruction 
     M5.Lcd.setTextColor(TFT_ORANGE,BLACK);  
   //  M5.Lcd.drawString("time: "+String(t),200,2,4);
 
