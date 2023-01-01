@@ -35,24 +35,13 @@ void loop(void)
 
 if(fase==0)
   {
-    if (M5.BtnA.wasPressed()) {  //Constantly check the status of keys A, B, and C, if A press
+ if (M5.BtnA.wasPressed() || M5.BtnB.wasPressed() || M5.BtnC.wasPressed()) {
     M5.Spk.DingDong();  // Play the DingDong sound. 
     delay(50);
     M5.Spk.DingDong();  // Play the DingDong sound. 
     delay(100);
-    M5.shutdown(); }  
-    if (M5.BtnB.wasPressed()) {  //Constantly check the status of keys A, B, and C, if A press
-    M5.Spk.DingDong();  // Play the DingDong sound. 
-    delay(50);
-    M5.Spk.DingDong();  // Play the DingDong sound. 
-    delay(100);
-    M5.shutdown(); }  
-    if (M5.BtnC.wasPressed()) {  //Constantly check the status of keys A, B, and C, if A press
-    M5.Spk.DingDong();  // Play the DingDong sound. 
-    delay(50);
-    M5.Spk.DingDong();  // Play the DingDong sound. 
-    delay(100);
-    M5.shutdown(); }  
+    M5.shutdown();
+    } 
 
     firstN=random(0,99);
     secondN=random(0,99);
